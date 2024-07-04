@@ -1,0 +1,38 @@
+a = 5;
+b = 10;
+c = 0;
+d = 15;
+
+leti a;
+leti b;
+leti c;
+leti d;
+
+yi (a == 5) lɔ
+    leti b;
+    yi (b == 10) lɔ
+        leti c;
+    lemakyi
+lemakyi
+
+yi (a != 5) lɔ
+    leti d;
+lelʉ
+    leti b;
+    c = c + 1;
+lemakyi
+
+letɔ̄ŋ c;
+
+lijɛt (c < 5) leghʉ
+    leti c;
+    c = c + 1;
+    yi (c == 3) lɔ
+        leti a;
+    lemakyi
+lemak
+
+ligʉe d = 5 leko d < 20 leghʉ
+    leti d;
+    d = d + 2;
+lemak
