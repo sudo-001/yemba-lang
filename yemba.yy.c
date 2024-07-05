@@ -1435,6 +1435,12 @@ static void yy_load_buffer_state  (void)
 {
 	int oerrno = errno;
     
+	if (b == NULL) {
+        /* Handle the case where b is NULL */
+        fprintf(stderr, "yy_init_buffer: Invalid buffer state.\n");
+        return;
+    }
+	
 	yy_flush_buffer( b );
 
 	b->yy_input_file = file;
